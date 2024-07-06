@@ -18,7 +18,7 @@ import axios from "axios";
 import { Toaster } from "react-hot-toast"
 
 import './App.css';
-import { FaBook } from 'react-icons/fa';
+
 
 
 function App() {
