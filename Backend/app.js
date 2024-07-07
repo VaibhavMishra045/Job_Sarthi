@@ -9,11 +9,17 @@ import jobRouter from "./routes/jobRouter.js"
 import { dbConnection } from "./database/dbConnections.js";
 import { errorMiddleware } from "./middlewares/error.js";
 
-
-const app=express();
 dotenv.config({path:"./config/config.env"});
+const app=express();
 
-app.use(cors());
+app.use(cors({
+    credentials: true,
+    origin: '*', 
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], 
+  }));
+
+
+
 
 
 app.use(cookieParser());
