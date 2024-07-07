@@ -12,7 +12,7 @@ import { errorMiddleware } from "./middlewares/error.js";
 dotenv.config({path:"./config/config.env"});
 const app=express();
 
-const allowedOrigins = ['http://localhost:5173']; // Add more allowed origins as needed
+const allowedOrigins = ['http://localhost:5173','https://job-sarthi-app.netlify.app']; // Add more allowed origins as needed
 
 app.use(cors({
   origin: function (origin, callback) {
